@@ -1,5 +1,5 @@
 #foodContainer{
-    margin: 2vh;
+    background-color: lightgray;
     display: flex;
     flex-direction: column;
 }
@@ -9,7 +9,7 @@
     width: 50vw;
     transition: transform .2s;
     &:hover{
-        transform: scale(1.05);
+        transform: scale(1.02);
     }
 }
 
