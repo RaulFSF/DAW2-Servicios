@@ -1,0 +1,7 @@
+<app-toolbar></app-toolbar>
+
+<div id="foodContainer">
+    <div *ngFor="let food of foodByType" class="foodTypes">
+        <app-item-details [item]="food"></app-item-details>
+    </div>
+</div>

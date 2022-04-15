@@ -1,0 +1,18 @@
+<div *ngIf="item">
+    <mat-card>
+        <mat-card-title>{{item.name}}</mat-card-title>
+        <div *ngIf="item.ingredients.length>0">
+            <mat-card-subtitle>
+                <span>Ingredientes:</span>
+                <ul id="ingredients" *ngFor="let ingredient of item.ingredients">
+                    <li>{{ingredient}}</li>
+                </ul>
+            </mat-card-subtitle>
+        </div>
+        <mat-card-footer>
+            <div id="price">
+                <h3>Precio: {{item.price}} €</h3>
+            </div>
+        </mat-card-footer>
+    </mat-card>
+</div>
