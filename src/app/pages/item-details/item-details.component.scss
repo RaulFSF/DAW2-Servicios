@@ -3,6 +3,16 @@
     margin-bottom: 2vh;
 }
 
+#container{
+    padding: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mat-card{
+    width: 50vw;
+}
+
 li{
     list-style:circle;
     font-style:oblique;

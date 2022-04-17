@@ -1,12 +1,8 @@
 #foodContainer{
     background-color: lightgray;
-    display: flex;
-    flex-direction: column;
 }
  
 .foodTypes{
-    margin: 2vh auto;
-    width: 50vw;
     transition: transform .2s;
     &:hover{
         transform: scale(1.02);

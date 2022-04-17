@@ -1,0 +1,20 @@
+#foodContainer {
+  background-color: lightgray;
+}
+
+.foodTypes {
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+
+.foodTypes:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+a {
+  text-decoration: none;
+}
+/*# sourceMappingURL=list.component.css.map */

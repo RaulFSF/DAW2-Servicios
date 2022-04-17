@@ -1,3 +1,4 @@
+import { NumberSymbol } from '@angular/common';
 import { Injectable } from '@angular/core';
 import { Observable, of} from 'rxjs';
 import { food } from '../interface/food';
@@ -117,7 +118,7 @@ export class FoodService {
       name: "Flan de Huevo Casero",
       ingredients: [],
       price: 3.50
-    },
+    }
   ];
   constructor() { 
     this.food = this.foodList;
@@ -141,5 +142,15 @@ export class FoodService {
       }
     });
     return of(foodByType);
+  }
+
+  findFood(findFood: string): Observable<food>{
+    let res!: food;
+    this.food.forEach(element => {
+      if(element.name === findFood){
+        res = element;
+      }
+    });
+    return of(res);
   }
 }

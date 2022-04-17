@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,MAAM,CAAA;EACF,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,GAAG;EACX,WAAW,EAAE,KAAK;CACrB;;AAED,AAAA,KAAK,CAAA;EACD,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,GAAG;CACd",
+    "sources": [
+        "search-food.component.scss"
+    ],
+    "names": [],
+    "file": "search-food.component.css"
+}

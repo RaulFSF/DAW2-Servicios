@@ -1,0 +1,62 @@
+#home {
+  background-color: lightgray;
+}
+
+#foodTypesContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.foodTypes {
+  margin: 3vh;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+
+.foodTypes:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+#findContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 4vh;
+}
+
+#searched {
+  background-color: lightgray;
+  width: 60vw;
+  min-height: 100vh;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 50vh;
+  height: 40vh;
+}
+
+#type {
+  text-transform: capitalize;
+}
+/*# sourceMappingURL=home.component.css.map */

@@ -1,14 +1,24 @@
 <app-toolbar></app-toolbar>
 
-<div id="foodTypesContainer">
-    <div *ngFor="let foodType of foodTypes" class="foodTypes">
-        <a routerLink="/list/{{foodType}}">
-            <mat-card color="secondary">
-                <img mat-card-image src='../../../assets/img/{{foodType}}.jpg'>
-                <div id="type">
-                    <mat-card-title>{{foodType}}</mat-card-title>
-                </div>
-            </mat-card>
-        </a>
+<div id="home">
+    <div id="findContainer">
+        <app-search-food (onSearch)="buscar( $event )"></app-search-food>
+    </div>
+    
+    <div id="foodTypesContainer" *ngIf="!foundFood">
+        <div *ngFor="let foodType of foodTypes" class="foodTypes">
+            <a routerLink="/list/{{foodType}}">
+                <mat-card color="secondary">
+                    <img mat-card-image src='../../../assets/img/{{foodType}}.jpg'>
+                    <div id="type">
+                        <mat-card-title>{{foodType}}</mat-card-title>
+                    </div>
+                </mat-card>
+            </a>
+        </div>
+    </div>
+    
+    <div id="searched" *ngIf="foundFood">
+        <app-item-details [item]="foundFood"></app-item-details>
     </div>
 </div>

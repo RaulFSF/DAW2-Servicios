@@ -1,5 +1,8 @@
-#foodTypesContainer{
+#home{
     background-color: lightgray;
+}
+
+#foodTypesContainer{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -12,14 +15,27 @@
         transform: scale(1.05);
     }
 }
+#findContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 4vh;
+}
+
+#searched{
+    background-color: lightgray;
+    width: 60vw;
+    min-height: 100vh;
+    margin: auto;
+}
 
 a{
     text-decoration: none;  
 }
 
 img{
-    width: 40vh;
-    height: 30vh;
+    width: 50vh;
+    height: 40vh;
 }
 
 #type{

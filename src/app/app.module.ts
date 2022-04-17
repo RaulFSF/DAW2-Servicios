@@ -9,6 +9,8 @@ import { MaterialModule } from './material/material.module';
 import { ItemDetailsComponent } from './pages/item-details/item-details.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
+import { SearchFoodComponent } from './components/search-food/search-food.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,13 +18,15 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
     HomeComponent,
     ListComponent,
     ItemDetailsComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    SearchFoodComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

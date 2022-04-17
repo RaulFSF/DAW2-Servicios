@@ -1,0 +1,28 @@
+#price {
+  margin-left: 4vh;
+  margin-bottom: 2vh;
+}
+
+#container {
+  padding: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mat-card {
+  width: 50vw;
+}
+
+li {
+  list-style: circle;
+  font-style: oblique;
+}
+/*# sourceMappingURL=item-details.component.css.map */
